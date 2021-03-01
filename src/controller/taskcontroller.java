@@ -73,13 +73,13 @@ public class taskcontroller {
         StringBuffer buffer = new StringBuffer();
         if (so.equals("Windows 10")) {
         String cmdNome = "TASKKILL /IM";
-            //String k = readProcess(cmdNome);
+
             buffer.append(cmdNome);
             buffer.append(" ");
             buffer.append(param);
         } else if (so.equals("Linux")) {
             String cmdNome = "pkill -f" + param;
-            //String k = readProcess(cmdNome);
+  
             buffer.append(cmdNome);
             buffer.append(" ");
             buffer.append(param);
