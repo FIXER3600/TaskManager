@@ -9,7 +9,7 @@ public class Main {
     public static void main(String[] args) throws IOException {
         taskcontroller procController= new taskcontroller();
         String sistemaOper=procController.so();
-       
+
         Integer opc=Integer.parseInt(JOptionPane.showInputDialog("1- Ver processos \n 2-Matar por nome \n 3-Matar por PID"));
         switch (opc){
             case 1:
