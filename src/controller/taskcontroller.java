@@ -59,7 +59,7 @@ public class taskcontroller {
     public void killName(String name) {
         String command = null;
 
-        if (isWindows()) command = "TASKKILL /IM " + name;
+        if (isWindows()) command = "TASKKILL /IM " + name+".exe";
         if (isLinux()) command = "pkill -f" + name;
 
         readProcess(command);
@@ -69,7 +69,7 @@ public class taskcontroller {
         String command = null;
 
         if (isWindows()) command = "TASKKILL /PID " + pid;
-        if (isLinux()) command = "kill -9" + pid;
+        if (isLinux()) command = "kill -9 " + pid;
 
         readProcess(command);
     }
